@@ -55,4 +55,13 @@ open class BaseFragment : Fragment() {
     fun moveToActivity(intent: Intent) {
         startActivity(intent)
     }
+
+    fun showProgress()
+    {
+        (activity as BaseActivity).showProgress()
+    }
+    fun hideProgress()
+    {
+        (activity as BaseActivity).hideProgress()
+    }
 }

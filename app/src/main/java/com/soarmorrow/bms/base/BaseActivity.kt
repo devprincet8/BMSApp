@@ -1,23 +1,21 @@
 package com.soarmorrow.bms.base
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.view.View.GONE
-import android.view.View.VISIBLE
 import android.view.WindowManager
-import androidx.appcompat.widget.Toolbar
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import com.soarmorrow.bms.R
-import kotlinx.android.synthetic.main.activity_main.*
+import com.wang.avi.AVLoadingIndicatorView
 
 
 open class BaseActivity : AppCompatActivity() {
+
+    private var avi: AVLoadingIndicatorView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN)
+        avi= (findViewById(R.id.progress)) as AVLoadingIndicatorView
     }
 
     fun loadFragment(fragment: BaseFragment, id: Int, tag: String) {
@@ -34,5 +32,13 @@ open class BaseActivity : AppCompatActivity() {
             supportActionBar?.setDisplayShowHomeEnabled(true)
         } else
             supportActionBar?.hide()
+    }
+
+    fun showProgress() {
+        avi?.show()
+    }
+
+    fun hideProgress() {
+        avi?.hide()
     }
 }
