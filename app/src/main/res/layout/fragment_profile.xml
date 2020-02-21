@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            tools:context=".view.profile.ProfileFragmentFragment">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/profile_edit"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BmsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_name_of_business"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_name"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaa" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/default_grey" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BmsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_address"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_address"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaa" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/default_grey" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BmsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_city"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_city"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaa" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/default_grey" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BmsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telephone"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_telephone"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaa" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/default_grey" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BmsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_booking_manager_mobile"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_booking_manager"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaa" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/default_grey" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BmsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_key_contact_person_mobile"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_key_contact"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaa" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/default_grey" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BmsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_email"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaa" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/default_grey" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BmsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Property type"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_property_type"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aaaaaaa" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/default_grey" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/BmsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_common_commission_offered"
+                android:textAllCaps="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/profile_commission"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="aaaaaaa" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.core.widget.NestedScrollView>

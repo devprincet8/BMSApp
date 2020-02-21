@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">BooKerala</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro1_title">HOUSEBOAT BOOKING</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry</string>
+    <string name="intro2_titile">HOMESTAY BOOKING</string>
+    <string name="intro3_title">AYURVEDIC TREATMENT BOOKING</string>
+    <string name="intro4_title">RESORT BOOKING</string>
+    <string name="one">intro1</string>
+    <string name="two">intro2</string>
+    <string name="three">intro3</string>
+    <string name="four">intro4</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <string name="register">Register</string>
+    <string name="thank_you">Thank You</string>
+    <string name="prompt_email">Email Address</string>
+    <string name="prompt_password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="new_user_sign_up">New user ? Sign up</string>
+    <string name="next_step">Next Step</string>
+    <string name="name_of_business">Name of Business</string>
+    <string name="address1">Address 1</string>
+    <string name="address_2">Address 2</string>
+    <string name="city">City</string>
+    <string name="telephone">Telephone</string>
+    <string name="booking_manager_mobile">Booking Manager Mobile</string>
+    <string name="key_contact_person_mobile">Key Contact Person Mobile</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_read_and_accept_terms_and_conditions">I Read And Accept Terms And Conditions</string>
+    <string name="congratulations">Congratulations !</string>
+    <string name="you_are_registered_for_n_b2b_booking_management">You Are Registered For \n B2B Booking Management</string>
+    <string name="property_name">Property Name</string>
+    <string name="number_of_rooms">Number of Rooms</string>
+    <string name="select_which_applies">Select Which Applies</string>
+    <string name="add_property_images">Add Property Images</string>
+    <string name="view_details">View Details</string>
+    <string name="save_property">Save Property</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="agent_wise_commission_settings">Agent Wise Commission Settings</string>
+    <string name="save">save</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="mobile">Mobile</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="add_new_personal_agent_information">Add New-Personal Agent Information</string>
+    <string name="add_new_offer">Add New Offer</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="offer">OFFER</string>
+    <string name="common_offer">Common Offer</string>
+    <string name="advertise_this_offer">Advertise this Offer</string>
+    <string name="charges_apply">** Charges Apply</string>
+    <string name="this_offer_is_free_of_cost_shows_on_search">** This offer is free of cost, shows on search</string>
+    <string name="email_sms_and_portal_banners_offered">Email,SMS and Portal Banners Offered</string>
+    <string name="add_new_offer_btn">Add new offer</string>
+    <string name="profile_name_of_business">Name Of Business</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_city">City</string>
+    <string name="profile_booking_manager_mobile">Booking manager mobile</string>
+    <string name="profile_key_contact_person_mobile">Key contact person mobile</string>
+    <string name="profile_common_commission_offered">Common Commission Offered</string>
+    <string name="total_sales_report">Total Sales Report</string>
+    <string name="agent_wise_sales_report">Agent Wise Sales Report</string>
+    <string name="total_sales">Total Sales</string>
+    <string name="agent_wise">Agent Wise</string>
+    <string name="booking_summary">Booking Summary</string>
+    <string name="name_of_customer">Name of Customer</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="country">Country</string>
+    <string name="cancel">Cancel</string>
+    <string name="book">Book now</string>
+    <string name="view_all">View All</string>
+    <string name="total_agent_commission">Total Agent Commission</string>
+    <string name="net_amount">Net Amount</string>
+    <string name="agent_commission">Agent Commission</string>
+    <string name="Rs">\u20B9</string>
+    <string name="total_amount">Total Amount</string>
+    <string-array name="languages">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+    </string-array>
+</resources>

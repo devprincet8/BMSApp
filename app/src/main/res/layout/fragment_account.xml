@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.github.lzyzsd.circleprogress.DonutProgress
+                            android:id="@+id/progress_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            custom:donut_finished_color="@color/bms_progress_red"
+                            custom:donut_progress="60" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/total_sales" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.github.lzyzsd.circleprogress.DonutProgress
+                            android:id="@+id/progress_agent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            custom:donut_finished_color="@color/bms_progress_yellow"
+                            custom:donut_progress="40" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/agent_wise" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/BmsTitleTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/total_sales_report" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_start_total"
+                        style="@style/BmsEditTextStyle"
+                        android:layout_width="0dp"
+                        android:focusable="false"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/ico"
+                        android:hint="@string/start_date"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_end_total"
+                        style="@style/BmsEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/ico"
+                        android:hint="@string/end_date"
+                        android:focusable="false"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text" />
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_report_total"
+                    style="@style/BmsButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/total_sales_report" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/BmsTitleTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/agent_wise_sales_report" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/spinner_bg"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/sp_agent"
+                        style="@style/BmsSpinnerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dropDownSelector="@android:drawable/spinner_dropdown_background"
+                        android:textAlignment="textStart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_start_agent"
+                        style="@style/BmsEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/ico"
+                        android:hint="@string/start_date"
+                        android:focusable="false"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_end_agent"
+                        style="@style/BmsEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/ico"
+                        android:hint="@string/end_date"
+                        android:focusable="false"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text" />
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_report_agent"
+                    style="@style/BmsButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/agent_wise_sales_report" />
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/BmsTitleTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/total_agent_commission" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_start_agent_commission"
+                        style="@style/BmsEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/ico"
+                        android:hint="@string/start_date"
+                        android:focusable="false"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_end_agent_commission"
+                        style="@style/BmsEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/ico"
+                        android:hint="@string/end_date"
+                        android:focusable="false"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text" />
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_report_agent_commission"
+                    style="@style/BmsButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/total_agent_commission" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:sv_animationType="Line"
+        app:sv_doneCircleColor="@color/bms_green"
+        app:sv_doneCircleRadius="15dp"
+        app:sv_doneStepLineColor="@color/bms_green"
+        app:sv_doneStepMarkColor="@color/white"
+        app:sv_doneTextColor="@color/bms_green"
+        app:sv_nextStepLineColor="@color/bms_green"
+        app:sv_nextTextColor="@color/default_grey"
+        app:sv_selectedCircleColor="@color/bms_green"
+        app:sv_selectedCircleRadius="15dp"
+        app:sv_selectedStepNumberColor="@color/white"
+        app:sv_selectedTextColor="@color/bms_green"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepNumberTextSize="15sp"
+        app:sv_stepPadding="4dp"
+        app:sv_stepViewStyle="@style/StepView" />
+
+    <com.soarmorrow.bms.view.custom_views.SwipeLockableViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/step_view"
+        android:layout_above="@+id/next"
+       />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bms_button"
+        android:text="@string/next_step"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size"
+        />
+</RelativeLayout>

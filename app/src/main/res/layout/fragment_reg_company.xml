@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bms_grey"
+        android:orientation="vertical"
+        android:padding="@dimen/common_page_margin">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_name_business"
+            style="@style/BmsEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_of_business"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_address1"
+            style="@style/BmsEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address1"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_address2"
+            style="@style/BmsEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address_2"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_city"
+            style="@style/BmsEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_telephone"
+            style="@style/BmsEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/telephone"
+            android:imeOptions="actionUnspecified"
+            android:inputType="phone" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_booking_manager_mob"
+            style="@style/BmsEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/booking_manager_mobile"
+            android:imeOptions="actionUnspecified"
+            android:inputType="phone" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_contact_person_mob"
+            style="@style/BmsEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/key_contact_person_mobile"
+            android:imeOptions="actionUnspecified"
+            android:inputType="phone" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

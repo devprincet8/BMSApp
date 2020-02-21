@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/BmsTitleNormalStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/add_new_offer" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_name"
+                    style="@style/BmsEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_start"
+                    style="@style/BmsEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/start_date"
+                    android:focusable="false"
+                    android:drawableRight="@drawable/ico"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_end"
+                    style="@style/BmsEditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/end_date"
+                    android:focusable="false"
+                    android:drawableRight="@drawable/ico"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bms_round_menu_bg"
+                    android:gravity="center_vertical|center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/BmsTitleNormalStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Commision Offered:" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:src="@drawable/minus" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_commision"
+                            style="@style/BmsTitleTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="15%"
+                            android:textColor="@color/bms_green" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:src="@drawable/plus" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/BmsTitleTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/offer"
+                    android:textColor="@color/bms_green" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_common_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:buttonTint="@color/bms_green" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_common_title"
+                        style="@style/BmsTitleTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cb_common_offer"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/default_grey"
+                        android:text="@string/common_offer" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_common_desc"
+                        style="@style/BmsTitleNormalStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_common_title"
+                        android:layout_toRightOf="@+id/cb_common_offer"
+                        android:paddingLeft="10dp"
+                        android:text="@string/this_offer_is_free_of_cost_shows_on_search"
+                        android:textColor="@color/bms_green" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/default_grey"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="0.5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cb_advertise_offer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:buttonTint="@color/bms_green" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_advertise_title"
+                        style="@style/BmsTitleTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/cb_advertise_offer"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/default_grey"
+                        android:text="@string/advertise_this_offer" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_advertise_desc"
+                        style="@style/BmsTitleNormalStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_advertise_title"
+                        android:layout_toRightOf="@+id/cb_advertise_offer"
+                        android:paddingLeft="10dp"
+                        android:text="@string/charges_apply"
+                        android:textColor="@color/bms_green" />
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_advertise_desc2"
+                        style="@style/BmsTitleNormalStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_advertise_desc"
+                        android:layout_toRightOf="@+id/cb_advertise_offer"
+                        android:paddingLeft="10dp"
+                        android:text="@string/email_sms_and_portal_banners_offered" />
+
+                </RelativeLayout>
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_add_offer"
+                    style="@style/BmsButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/add_new_offer_btn" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

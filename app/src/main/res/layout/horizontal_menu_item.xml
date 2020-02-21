@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/bms_round_menu_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/horizontal_menu_icon"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/account_small" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/horizontal_menu_title"
+        style="@style/BmsTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Account\nManagement" />
+</LinearLayout>

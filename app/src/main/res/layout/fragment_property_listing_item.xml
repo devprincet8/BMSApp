@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/property_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BmsTitleTextStyle"
+                android:text="title" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/property_address"
+                android:layout_width="wrap_content"
+                style="@style/BmsTitleNormalStyle"
+                android:layout_height="wrap_content"
+                android:text="title" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_property_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/property_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/BmsTitleNormalStyle"
+                android:text="title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/edit_text_border_color" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/property_details"
+                style="@style/BmsButtonStyle"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_details" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
