@@ -3,15 +3,13 @@ package com.soarmorrow.bms.view.intro_screen
 import android.content.Context
 import android.os.Bundle
 import android.os.Handler
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
-import com.google.android.material.snackbar.Snackbar
 
 import com.soarmorrow.bms.R
-import com.soarmorrow.bms.api.login.LoginResponse
+import com.soarmorrow.bms.api.response.login.LoginResponse
 import com.soarmorrow.bms.base.BaseFragment
 import com.soarmorrow.bms.util.Utils
 import com.soarmorrow.bms.util.Validator

@@ -2,7 +2,7 @@ package com.soarmorrow.bms.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.soarmorrow.bms.api.login.LoginResponse
+import com.soarmorrow.bms.api.response.login.LoginResponse
 import com.soarmorrow.bms.repository.LoginRepository
 import org.koin.standalone.KoinComponent
 

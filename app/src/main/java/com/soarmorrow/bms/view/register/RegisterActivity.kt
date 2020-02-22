@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
 import com.shuhart.stepview.StepView
 import com.soarmorrow.bms.R
+import com.soarmorrow.bms.api.request.RegisterRequest
 import com.soarmorrow.bms.base.BaseActivity
 import com.soarmorrow.bms.constants.AppConstants.registerTitleArray
 import com.soarmorrow.bms.constants.RegisterFragConst
@@ -17,6 +18,8 @@ import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : BaseActivity() {
     var step = RegisterFragConst.COMPANY.ordinal
+
+    private lateinit var registerRequest:RegisterRequest
 
     companion object {
         fun newIntent(context: Context?): Intent {
@@ -30,6 +33,7 @@ class RegisterActivity : BaseActivity() {
         showActionBar(true)
         viewpager.setSwipePagingEnabled(false)
         step_view.setSteps(registerTitleArray)
+        registerRequest=RegisterRequest()
         next.setOnClickListener {
             when (step) {
                 RegisterFragConst.COMPANY.ordinal -> {

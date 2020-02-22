@@ -1,8 +1,7 @@
 package com.soarmorrow.bms.api
 
-import com.soarmorrow.bms.api.login.LoginResponse
+import com.soarmorrow.bms.api.response.login.LoginResponse
 import retrofit2.Call
-import retrofit2.http.Body
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST

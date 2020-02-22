@@ -1,7 +1,7 @@
 package com.soarmorrow.bms.repository
 
 import com.soarmorrow.bms.api.Api
-import com.soarmorrow.bms.api.login.LoginResponse
+import com.soarmorrow.bms.api.response.login.LoginResponse
 import retrofit2.Call
 import retrofit2.Response
 
