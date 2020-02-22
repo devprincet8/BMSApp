@@ -7,14 +7,14 @@ import retrofit2.Response
 
 class LoginRepository(private val netWorkApi: Api) {
 
-    fun doLogin(username:String,password:String,onProductData: OnLogin) {
+    fun doLogin(username:String,password:String,onLoginData: OnLogin) {
         netWorkApi.userLogin(username,password).enqueue(object : retrofit2.Callback<LoginResponse> {
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
-                onProductData.onSuccess((response.body() as LoginResponse))
+                onLoginData.onSuccess((response.body() as LoginResponse))
             }
 
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                onProductData.onFailure()
+                onLoginData.onFailure()
             }
         })
     }

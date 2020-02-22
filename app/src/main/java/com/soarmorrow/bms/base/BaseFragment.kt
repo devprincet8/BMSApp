@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.soarmorrow.bms.R
 import com.soarmorrow.bms.data.DataManager
+import com.soarmorrow.bms.util.Utils
 import java.util.*
 
 
@@ -54,6 +55,10 @@ open class BaseFragment : Fragment() {
     }
     fun moveToActivity(intent: Intent) {
         startActivity(intent)
+    }
+    fun showMessage(msg:String)
+    {
+        view?.let { Utils.showSnackBar(msg, it) }
     }
 
     fun showProgress()

@@ -1,6 +1,7 @@
-package com.soarmorrow.bms
+package com.soarmorrow.bms.di
 
 import com.soarmorrow.bms.api.Api
+import com.soarmorrow.bms.constants.Config.BASE_URL
 import com.soarmorrow.bms.repository.LoginRepository
 import com.soarmorrow.bms.viewmodel.LoginViewModel
 import okhttp3.OkHttpClient
@@ -12,7 +13,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-val mainModule = module {
+val mainModdule = module {
 
     single { LoginRepository(get()) }
 
@@ -24,7 +25,7 @@ val mainModule = module {
 
 fun createWebService(): Api {
     val builder: Retrofit.Builder = Retrofit.Builder()
-        .baseUrl("https://demo.soarmorrow.com/bms/public/api/")
+        .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
 
     val httpClient: OkHttpClient.Builder = OkHttpClient.Builder()

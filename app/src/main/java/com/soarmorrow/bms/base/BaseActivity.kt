@@ -1,9 +1,11 @@
 package com.soarmorrow.bms.base
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.soarmorrow.bms.R
+import com.soarmorrow.bms.util.Utils
 import com.wang.avi.AVLoadingIndicatorView
 
 
@@ -32,6 +34,13 @@ open class BaseActivity : AppCompatActivity() {
             supportActionBar?.setDisplayShowHomeEnabled(true)
         } else
             supportActionBar?.hide()
+    }
+    fun moveToActivity(intent: Intent) {
+        startActivity(intent)
+    }
+    fun showMessage(msg:String)
+    {
+       Utils.showSnackBar(msg, findViewById(android.R.id.content))
     }
 
     fun showProgress() {

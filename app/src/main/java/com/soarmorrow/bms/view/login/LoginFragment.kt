@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import com.soarmorrow.bms.R
 import com.soarmorrow.bms.api.response.login.LoginResponse
 import com.soarmorrow.bms.base.BaseFragment
+import com.soarmorrow.bms.constants.Config.SUCCESS
 import com.soarmorrow.bms.util.Utils
 import com.soarmorrow.bms.util.Validator
 import com.soarmorrow.bms.view.home.HomeActivity
@@ -46,18 +47,18 @@ class LoginFragment : BaseFragment() {
             }
             else
             {
-                Utils.showMessage("Field cannot be empty",it)
+               showMessage(getString(R.string.empty_filed))
             }
 
         }
 
 
         loginModel.loginResponse.observe(this, Observer(function = fun(resp: LoginResponse) {
-            hideProgress()
             resp.let {
-               if (resp.code ==200)
+               if (resp.code ==SUCCESS)
                {
-                   Utils.showMessage(resp.message?.text!!, getView()!!)
+                   hideProgress()
+                   showMessage(resp.message?.text!!)
                    Handler().postDelayed({
                         dataManager.setLoginStatus(true)
                        moveToActivity(HomeActivity.newIntent(context))
@@ -68,7 +69,8 @@ class LoginFragment : BaseFragment() {
                }
                 else
                {
-                   Utils.showMessage(resp.message?.text!!, getView()!!)
+                   hideProgress()
+                   showMessage(resp.message?.text!!)
                }
             }
         }))

@@ -8,10 +8,16 @@ import com.soarmorrow.bms.base.BaseActivity
 import com.soarmorrow.bms.constants.FragmentConstants
 import com.soarmorrow.bms.view.intro_screen.HomeFragment
 
+
 class HomeActivity : BaseActivity() {
     companion object {
         fun newIntent(context: Context?): Intent {
-            return Intent(context, HomeActivity::class.java)
+            val intent = Intent(context, HomeActivity::class.java)
+            intent.addFlags(
+                Intent.FLAG_ACTIVITY_NEW_TASK
+                        or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            )
+            return intent
         }
     }
 
